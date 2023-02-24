@@ -1,11 +1,8 @@
 package org.example.base;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -40,6 +37,15 @@ public class BasePage {
         try{
             element.click();
             System.out.println("Successfully clicked on the element");
+        }catch (Exception oExp){
+            Assert.fail("Failed to send text. Exception: "+ oExp.getMessage());
+        }
+    }
+    
+    public void click(WebElement element, String desc){
+        try{
+            element.click();
+            System.out.println("Successfully clicked on the element: "+ desc);
         }catch (Exception oExp){
             Assert.fail("Failed to send text. Exception: "+ oExp.getMessage());
         }

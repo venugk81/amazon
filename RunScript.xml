@@ -3,7 +3,8 @@
 <suite name="Suite" parallel="classes" thread-count="1" >
     <test name="Test">
         <classes>
-            <class name="scripts.AmazonScript"/>
+            <!--<class name="scripts.AmazonScript"/> -->
+			<class name="scripts.profile.AmazonProfileScript"/>
 
             <!--
             <class name="com.tests.Regression.Inventory.AddItemToCartFromProductHomeTest2"/>
