@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="scripts.profile.AmazonProfileScript">
+      <class name="scripts.Google">
         <methods>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="purchaseItems"/>
+          <include name="afterSuite"/>
+          <include name="beforeSuite"/>
+          <include name="test"/>
         </methods>
-      </class> <!-- scripts.profile.AmazonProfileScript -->
+      </class> <!-- scripts.Google -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
